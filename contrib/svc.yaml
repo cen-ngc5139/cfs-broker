@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cfs-broker-svc
+  namespace: cfs
+  labels:
+    app: cfs-broker
+spec:
+  type: ClusterIP
+  ports:
+  - protocol: TCP
+    name: web
+    port: 80
+    targetPort: 80
+  selector:
+    app: cfs-broker

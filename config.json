@@ -1,0 +1,9 @@
+{
+  "http": {
+    "enabled": true,
+    "listen": ":80",
+    "backdoor": false
+  },
+  "watch_namespace": "default",
+  "env": "dev"
+}
